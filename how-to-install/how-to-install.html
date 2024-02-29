@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMS URL Shortener - Installation Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-bottom: 15px;
+        }
+        ol {
+            margin-left: 20px;
+        }
+        code {
+            font-family: Consolas, monospace;
+            background-color: #f8f8f8;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Installation Guide</h1>
+
+    <h2>Step 1: Prepare the Server</h2>
+    <p>Make sure your server meets the minimum requirements for running Laravel:</p>
+    <ul>
+        <li>PHP >= 7.4</li>
+        <li>BCMath PHP Extension</li>
+        <li>Ctype PHP Extension</li>
+        <li>Fileinfo PHP Extension</li>
+        <li>JSON PHP Extension</li>
+        <li>Mbstring PHP Extension</li>
+        <li>OpenSSL PHP Extension</li>
+        <li>PDO PHP Extension</li>
+        <li>Tokenizer PHP Extension</li>
+        <li>XML PHP Extension</li>
+    </ul>
+
+    <p>Also, obviously, you need a domain set up on your server to use the features of this script. The preparation of the server depends on the server's OS and the Webserver.</p>
+
+    <p>There is a good documentation for this on Laravel website which you can read it <a href="https://laravel.com/docs/10.x/deployment" target="_blank">here</a>.</p>
+
+    <p>Also, if you are using Nginx as your web server, I have provided a sample conf file beside this documentation.</p>
+
+    <h2>Step 2: Unzip the Package File</h2>
+    <p>Unzip the package file containing your Laravel application into your server domain root.</p>
+
+    <h2>Step 3: Install Composer Dependencies</h2>
+    <p>Navigate to your Laravel project directory using Terminal and install Composer dependencies:</p>
+    <code>cd yourlaravelapp</code><br>
+    <code>composer install</code>
+
+    <h2>Step 4: Run the installer</h2>
+    <p>In order to prepare everything else and seed the initial data, you need to run the installer. To do so, navigate to <code>https://your-website.com/install.php</code></p>
+
+    <p>The installer checks some requirements, gets some information from you ans installs the script completely.</p>
+
+    <h2>Step 5: Navigate to admin area</h2>
+    <p>After installation completes, it will give you the link to your admin area. It is <code>https://your-website.com/admin</code>. You have to enter your admin email and password defined in the installer and log into the admin area</p>
+
+    <p>Contact me in order to any issues, problems or feedbacks.</p>
+</div>
+
+</body>
+</html>

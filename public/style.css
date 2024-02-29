@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #efefef;
+    font-family: Roboto, serif;
+    color: #333
+}
+
+.center {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    padding: 20px 0;
+    color: #1976d2;
+    background: white;
+    box-shadow: 0 1px 4px #ccc;
+    margin-bottom: 15px;
+    height: 65px;
+}
+
+.header .logo {
+    font-weight: bold;
+    font-size: larger;
+    flex: 1;
+    min-width: 200px;
+    max-width: 200px;
+    width: 200px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.header .nav {
+    flex: 1;
+    display: flex;
+}
+
+.header .nav .nav-item {
+    font-size: 13px;
+    flex: 1;
+    padding: 5px;
+    margin: -20px 0;
+    position: relative;
+    transition: all linear 300ms;
+}
+
+.header .nav .nav-item:not(.nav-spacer):hover {
+    background: #dcdcdc
+}
+
+.header .nav .nav-item a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px 5px;
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+}
+
+#app {
+    width: 500px;
+    min-height: calc(100vh - 160px);
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+#app .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: larger;
+}
+
+#app .description {
+    line-height: 25px;
+}
+
+.main-card {
+    background: white;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    border-radius: 3px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.url-form {
+    display: flex;
+    min-height: 45px;
+    margin: 25px 0;
+}
+
+.url-input {
+    flex: 1;
+    font-size: 18px;
+    border: 1px solid #999;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px 0 0 5px;
+}
+
+textarea.url-input {
+    height: 150px;
+}
+
+.url-button-wrapper {
+    flex: 1;
+    min-width: 100px;
+    max-width: 100px;
+    width: 100px;
+}
+
+.url-button {
+    background: #1976d2;
+    color: white;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.error {
+    color: red;
+    font-size: smaller;
+}
+
+.clipboard-success {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+.restart-button {
+    padding: 10px;
+    border-radius: 3px;
+    margin: 5px 0;
+}
+
+.qr-holder {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.share-bar {
+    height: 27px;
+    display: inline-flex;
+    border: 1px solid #666;
+    margin: 5px auto;
+    border-radius: 3px;
+}
+
+.share-bar .share-caption {
+    flex: 1;
+    background: linear-gradient(to bottom, #666 0%, white 50%, #666 100%);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.share-bar .share-icon {
+    flex: 1;
+    width: 25px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.share-bar .share-icon:before {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/img/networks-bg.png');
+}
+
+.share-bar .share-icon a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.share-bar .share-icon.icon-facebook {
+    background: linear-gradient(to bottom, #0F459A 0%, #1877F2 50%, #0F459A 100%);
+}
+
+.share-bar .share-icon.icon-facebook:before {
+    background-position: 0 0;
+}
+
+.share-bar .share-icon.icon-instagram {
+    background: linear-gradient(to bottom, rgb(123, 82, 163) 0%, rgb(255, 149, 0) 50%, rgb(238, 130, 238) 100%);
+}
+
+.share-bar .share-icon.icon-instagram:before {
+    background-position: -32px 0;
+}
+
+.share-bar .share-icon.icon-twitter {
+    background: linear-gradient(to bottom, black 0%, #666666 50%, black 100%);
+}
+
+.share-bar .share-icon.icon-twitter:before {
+    background-position: 0 -37px;
+}
+
+.share-bar .share-icon.icon-pinterest {
+    background: linear-gradient(to bottom, #990000 0%, #E60023 50%, #990000 100%);
+}
+
+.share-bar .share-icon.icon-pinterest:before {
+    background-position: 25px -73px;
+}
+
+.share-bar .share-icon.icon-linkedin {
+    background: linear-gradient(to bottom, #00588A 0%, #0077B5 50%, #00588A 100%);
+}
+
+.share-bar .share-icon.icon-linkedin:before {
+    background-position: -64px -37px;
+}
+
+.share-bar .share-icon.icon-whatsapp {
+    background: linear-gradient(to bottom, #1A9D4D 0%, #25D366 50%, #1A9D4D 100%);
+}
+
+.share-bar .share-icon.icon-whatsapp:before {
+    background-position: -32px -73px;
+}
+
+.share-bar .share-icon.icon-telegram {
+    background: linear-gradient(to bottom, #006699 0%, #0088CC 50%, #006699 100%);
+}
+
+.share-bar .share-icon.icon-telegram:before {
+    background-position: -32px -37px;
+}
+
+.share-bar .share-icon.icon-snapchat {
+    background: linear-gradient(to bottom, #CCCB00 0%, #FFFC00 50%, #CCCB00 100%);
+}
+
+.share-bar .share-icon.icon-snapchat:before {
+    background-position: 0 -73px;
+}
+
+.footer {
+    height: 80px;
+    background: #222;
+    color: white;
+    padding: 30px 10px 10px;
+    text-align: center;
+}
+
+/* Ad Placement Styles */
+.ad {
+    text-align: center;
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+.ad-top {
+    width: 100%;
+    display: block;
+}
+
+.ad-left,
+.ad-right {
+    width: 120px;
+    position: fixed;
+    top: 100px;
+}
+
+.ad-left {
+    left: 10px;
+}
+
+.ad-right {
+    right: 10px;
+}
+
+.ad-after-content {
+    display: block;
+    margin-top: 15px;
+}
+
+#app {
+    width: 500px;
+    min-height: calc(100vh - 160px);
+    margin: 0 auto;
+    padding-top: 60px;
+    position: relative; /* For positioning side ads correctly */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .ad-left,
+    .ad-right {
+        display: none; /* Hide side ads on smaller screens */
+    }
+
+    .ad-top,
+    .ad-after-content {
+        width: 100%;
+        display: block;
+    }
+
+    #app {
+        width: 100%;
+        padding: 10px;
+    }
+}
+

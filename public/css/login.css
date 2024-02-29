@@ -1,0 +1,150 @@
+/* General Body Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.nav-link {
+    color: #007bff !important;
+}
+
+/* Main Content */
+.main {
+    padding: 2rem 0;
+}
+
+/* Utility Classes */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Style for the card */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-top: 30px;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body .row {
+    margin: 15px 0;
+}
+
+/* Style for form fields */
+.form-control {
+    border: 1px solid #ced4da;
+    padding: 10px;
+    border-radius: 4px;
+    width: calc(100% - 20px)
+}
+
+/* Style for invalid fields */
+.is-invalid {
+    border-color: #dc3545;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+}
+
+/* Style for buttons */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Style for the link */
+.btn-link {
+    color: #007bff;
+    text-decoration: none;
+    padding: 6px 8px;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    .card {
+        box-shadow: none;
+    }
+
+    .col-md-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-md-4 {
+        text-align: left;
+    }
+}
